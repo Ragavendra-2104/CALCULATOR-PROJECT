@@ -6,6 +6,29 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+      <style>
+        .back-button-container {
+    text-align: center;
+}
+
+.back-button {
+    background-color: #2196f3;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #1976d2;
+}
+    </style>
 </head>
 <body>
     <div class="calculator">
@@ -40,6 +63,9 @@
             <button class="operator" data-value="=">=</button>
             <button class="operator" data-value=".">.</button>
         </div>
+    </div>
+     <div class="back-button-container">
+        <button class="back-button" onclick="location.href='index.html'">Go Back</button>
     </div>
 </body>
 </html>
